@@ -10,9 +10,14 @@
     <!-- font awesome kit  -->
     <script src="https://kit.fontawesome.com/5c5d80e38d.js" crossorigin="anonymous"></script>
 
+    
+
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -21,7 +26,7 @@
         <!-- navbar area  -->
         <nav class="navbar navbar-expand-lg navbar-light  py-5">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">ODeen Convention Center</a>
+                <a class="navbar-brand fw-bold logo-color" href="#">ODeen Convention Center</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,7 +52,7 @@
 
 
         <!-- banner area  -->
-        <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide mb-5 h-50 w-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -58,8 +63,8 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/banner.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img  src="./images/banner4.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
                         <h1 class="display-3 fw-bold">The perfect venue for your <br> next event</h1>
                         <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                             officia consequat duis enim velit </p>
@@ -67,8 +72,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/banner.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img src="./images/banner2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
                         <h1 class="display-3 fw-bold">The perfect venue for your <br> next event</h1>
                         <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                             officia consequat duis enim velit </p>
@@ -76,9 +81,9 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/banner.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 class="display-3 fw-bold">The perfect venue for your <br> next event</h1>
+                    <img src="./images/banner5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h1 class="display-3 fw-bold ">The perfect venue for your <br> next event</h1>
                         <p class="">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                             officia consequat duis enim velit </p>
                         <button class="btn btn-light px-5 fw-bold mb-3 text-primary">Book Now</button>
@@ -105,24 +110,36 @@
 
         <!-- ablum area  -->
         <section class="container my-5">
-            <div class="row d-flex align-items-center">
+            <div class="row  d-flex align-items-center">
                 <div class="col-12 col-lg-6">
                     <img class="img-fluid" src="./images/wedding.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6">
-                    <h1>Every moment is Precious </h1>
-                    <p>We Care about your every moment.And we try our best to fulfil your moment with joy.Thats why we also make photo album.It will keep your memories safe</p>
-                    <button class="btn btn-primary text-white fw-bold mb-3 px-5">See Ablum <i class="fas fa-arrow-right"></i></button>
+                <div class="col-12 col-lg-6 ">
+                    <div class="position-relative">
+                    <h1 class="section-header-color">Every moment is Precious </h1>
+                    <p class="text-custom">We Care about your every moment.And we try our best to fulfil your moment with joy.Thats why we also make photo album.It will keep your memories safe 
+                    </p>
+                    <div class="toast show position-absolute top-50  start-sm-50 start-lg-50 align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="d-flex">
+                          <div class="toast-body">
+                            <i class="fas fa-gift me-3"></i>20% off on next booking
+                         </div>
+                          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                      </div>
+                    <button class="btn bg-custom text-white fw-bold mb-3 px-5">See Ablum <i class="fas fa-arrow-right"></i></button>
+                    </div>
 
                 </div>
             </div>
+            
         </section>
 
 
 
         <!-- package area  -->
         <section class="container">
-            <h1 class="text-center">Our package</h1>
+            <h1 class="text-center section-header-color">Our package</h1>
             <div class="row row-cols-1 row-cols-md-4 g-4 my-5">
                 <div class="col">
                     <div class="card h-100 border-0 pt-5">
@@ -149,7 +166,7 @@
 
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-primary rounded-pill px-5">Choose Plan</button>
+                            <button class="btn btn-light text-primary rounded-pill px-5">Choose Plan</button>
                         </div>
                     </div>
                 </div>
@@ -186,26 +203,26 @@
 
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-primary rounded-pill px-5">Choose Plan</button>
+                            <button class="btn btn-light text-primary rounded-pill px-5">Choose Plan</button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 position-relative border-0 bg-primary text-white">
+                    <div class="card h-100 position-relative border-0 bg-custom text-white">
                         <div class="card-body">
                             <h2 class="">$800</h2>
                             <h3>Wedding plus</h3>
                             <p class="card-text">For most weddings with premium plans</p>
-                            <ul class="list-group bg-primary">
-                                <li class="list-group-item bg-primary text-white border-0 px-0"><i
+                            <ul class="list-group bg-custom">
+                                <li class="list-group-item bg-custom text-white border-0 px-0"><i
                                         class="fas fa-check bg-light text-primary rounded-circle p-1 me-1"></i>Full space access</li>
-                                <li class="list-group-item bg-primary text-white border-0 px-0"><i
+                                <li class="list-group-item bg-custom text-white border-0 px-0"><i
                                         class="fas fa-check bg-light text-primary rounded-circle p-1 me-1"></i>Dedicated team</li>
-                                <li class="list-group-item bg-primary text-white border-0 px-0"><i
+                                <li class="list-group-item bg-custom text-white border-0 px-0"><i
                                         class="fas fa-check bg-light text-primary rounded-circle p-1 me-1"></i></i>Buffet food</li>
-                                <li class="list-group-item bg-primary text-white border-0 px-0"><i
+                                <li class="list-group-item bg-custom text-white border-0 px-0"><i
                                         class="fas fa-check bg-light text-primary rounded-circle p-1 me-1"></i></i>premium Decoration</li>
-                                <li class="list-group-item bg-primary text-white border-0 px-0"><i
+                                <li class="list-group-item bg-custom text-white border-0 px-0"><i
                                         class="fas fa-check bg-light text-primary rounded-circle p-1 me-1"></i>pay as plan</li>
                             </ul>
                             <span
@@ -247,7 +264,7 @@
 
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-primary rounded-pill px-5">Choose Plan</button>
+                            <button class="btn btn-light text-primary rounded-pill px-5">Choose Plan</button>
                         </div>
                     </div>
                 </div>
@@ -256,7 +273,7 @@
 
         <!-- subscribe area  -->
         <section class="container">
-            <h1 class="text-center mb-5">Join with Us</h1>
+            <h1 class="text-center mb-5 section-header-color">Join with Us</h1>
             <form class="row g-3 mb-3">
                 <div class="col-md-4">
                   <label for="validationDefault01" class="form-label">First name</label>
@@ -298,14 +315,14 @@
                   </div>
                 </div>
                 <div class="col-12 text-center">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                  <button class="btn bg-custom text-white" type="submit">Submit form</button>
                 </div>
               </form>
         </section>
 
         <!-- FAQ aea  -->
         <section class="container">
-            <h1 class="text-center mt-5 mb-5">Frequently Asked Questions</h1>
+            <h1 class="text-center mt-5 mb-5 section-header-color">Frequently Asked Questions</h1>
             <div class="row mb-5 d-flex">
                 <div class="col-lg-6 oder-2 order-md-1 order-sm-2">
                     <div class="accordion" id="accordionExample">
@@ -316,7 +333,7 @@
                             </button>
                           </h2>
                           <div id="collapseOne" class="accordion-collapse  collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-custom">
                                 Event design and event planning work hand in hand to deliver a successful event.Events by Knight offer tailor made events. This means we incorporate both event design and event planning to create that perfect event.
                             </div>
                           </div>
@@ -328,7 +345,7 @@
                             </button>
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-custom">
                               <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                           </div>
@@ -340,7 +357,7 @@
                             </button>
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
+                            <div class="accordion-body text-custom">
                               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                           </div>
@@ -352,7 +369,7 @@
                               </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
+                              <div class="accordion-body text-custom">
                                 <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                               </div>
                             </div>
@@ -372,25 +389,11 @@
 
     </main>
 
-    <footer class="bg-dark py-5">
+    <footer class="footer-bg py-5">
         <section class="container">
-            <!-- <div class="row text-white d-flex align-items-center">
-                <div class="col-12 col-lg-6">
-                    <p>
-                        © 2020 bike. All rights reserved
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 d-flex flex-column">
-                    <p>Get the App</p>
-                    <a href=""><img class="img-fluid" src="./icons/app-store.png" alt=""></a>
-                    <br>
-                    <a href=""><img class="img-fluid" src="./icons/google-play.png" alt=""></a>
-                </div>
-            </div> -->
-
-            <div class="d-sm-flex d-lg-flex justify-content-lg-between justify-content-sm-center flex-sm-column flex-lg-row align-items-lg-center align-items-sm-center">
-                <p class="text-white order-sm-2 order-lg-1 ">© 2020 bike. All rights reserved</p>
-                <div class="text-white order-sm-1 order-lg-2 mb-5">
+            <div class="d-sm-flex d-lg-flex justify-content-lg-between justify-content-sm-center flex-sm-column flex-lg-row align-items-lg-center align-items-sm-center text-custom">
+                <p class=" order-sm-2 order-lg-1 ">© 2020 bike. All rights reserved</p>
+                <div class=" order-sm-1 order-lg-2 mb-5">
                     <p>Get the App</p>
                     <a href="https://www.apple.com/app-store/" target="_blank"><img class="img-fluid mb-3" src="./icons/app-store.png" alt=""></a>
                     <br>
